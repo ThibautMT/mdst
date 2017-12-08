@@ -2,37 +2,37 @@
 
 **mdst** is a static library for testing.
 
-##Installation
+## Installation
 
 To install, run :
 ```bash
 $ make && sudo make install
 ```
 
-##Use
+## Use
 
 To use, simply include in your test file:
 ```C
 #include <mdst.h>
 ```
 
-###Specify test name
+### Specify test name
 
 To specify a test name, use :
 ```C
-#define test_name "whateveryouwan"
+#define test_name "whateveryouwant"
 ```
 
 By default, test name value is `"undefined_test_name"`
 
-###Compile
+### Compile
 
 Where `main.c` is your source file and `exec` the output executable :
 ```shell
-gcc -static main.c -lmdst -o exec
+$ gcc -static main.c -lmdst -o exec
 ```
 
-##Example
+## Example
 
 ```C
 // file.h
@@ -61,5 +61,5 @@ int main(int argc, char *argv[])
 ```
 
 ```shell
-gcc -static file.c test_file.c -lmdst -o exec
+$ gcc -static file.c test_file.c -lmdst -o exec
 ```
