@@ -1,7 +1,7 @@
 CC=gcc
 CFLAGS=
 LDFLAGS=
-EXEC=mdst.a
+EXEC=libmdst.a
 
 LIBDIR=lib/
 OBJDIR=obj/
