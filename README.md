@@ -55,7 +55,7 @@ int ret_zero()
 
 int main(int argc, char *argv[])
 {
-  m_assert(ret_zero == 0, "error : `" test_name "` failed.");
+  m_assert(ret_zero() == 0, "error : `" test_name "` failed.");
   return EXIT_SUCCESS;
 }
 ```
