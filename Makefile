@@ -23,4 +23,5 @@ clean:
 	@rm -f $(OBJDIR)*.o
 
 install:
+	@cp $(SRCDIR)mdst.h /usr/local/include/mdst.h
 	@cp $(LIBDIR)$(EXEC) /usr/local/lib/$(EXEC)
